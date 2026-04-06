@@ -47,3 +47,4 @@ logs/
 *.parquet
 *.pkl
 *.joblib
+*.drawio
