@@ -48,7 +48,7 @@ logs/
 *.pkl
 *.joblib
 *.drawio
-.docx
+*.docx
 
 # draw.io temp / backup files
 *.bkp
