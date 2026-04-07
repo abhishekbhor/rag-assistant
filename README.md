@@ -2,6 +2,8 @@
 
 A modular Retrieval-Augmented Generation (RAG) system designed to demonstrate system-level thinking across ingestion, retrieval, ranking, generation, observability, caching, and feedback loops.
 
+<img src="rag-structure.png" alt="Code structure" width="500">
+
 This project focuses on architecture, tradeoffs, and system behavior, not just model integration.
 
 ## Overview
@@ -15,7 +17,6 @@ Key capabilities:
 - Caching (response reuse)
 - Feedback loop (user ratings influence ranking)
 
-<img src="rag-structure.png" alt="Code structure" width="500">
 
 ## Architecture
 
