@@ -1,56 +1,3 @@
-rag-assistant/
-├── app/
-│   ├── main.py                     # CLI entry point
-│   ├── api.py                      # FastAPI endpoints
-│   ├── services/                   # Orchestrates ingestion and query workflows
-│   │   ├── ingestion_service.py
-│   │   └── query_service.py
-│   ├── providers/                  # Embedding / LLM provider abstraction
-│   │   ├── factory.py
-│   │   └── openai_provider.py
-│   ├── observability/              # Latency, retrieval diagnostics, debug metrics
-│   │   └── metrics.py
-│   ├── cache/                      # Response and embedding cache
-│   │   └── cache_manager.py
-│   ├── feedback/                   # User rating capture and ranking adjustment
-│   │   ├── feedback_store.py
-│   │   └── rank_adjuster.py
-│   ├── ingestion/                  # Offline indexing pipeline
-│   │   ├── loader.py
-│   │   ├── chunker.py
-│   │   ├── embedder.py
-│   │   └── indexer.py
-│   ├── retrieval/                  # Retrieval and reranking pipeline
-│   │   ├── embed_query.py
-│   │   ├── bm25_index.py
-│   │   ├── search.py
-│   │   └── rerank.py
-│   ├── generation/                 # Prompt construction and answer generation
-│   │   ├── prompt.py
-│   │   └── llm.py
-│   ├── storage/                    # Index and chunk persistence
-│   │   ├── vector_store.py
-│   │   └── metadata_store.py
-│   └── evaluation/                 # Offline evaluation and benchmarking
-│       ├── eval_data.py
-│       └── eval_runner.py
-├── config/
-│   └── settings.py
-├── data/
-│   └── docs.txt
-├── index/                          # Generated runtime artifacts
-│   ├── index.faiss                     ← vector index
-│   ├── chunks.pkl                      ← chunk metadata
-│   ├── metrics.log                     ← observability logs
-│   ├── feedback.jsonl                  ← feedback data
-│   ├── cache/                          ← runtime cache
-│       ├── responses/
-│       └── embeddings/
-├── .env
-└── requirements.txt
-
-
-
 # RAG Assistant
 
 A modular Retrieval-Augmented Generation (RAG) system designed to demonstrate system-level thinking across ingestion, retrieval, ranking, generation, observability, caching, and feedback loops.
@@ -71,6 +18,8 @@ Key capabilities:
 ## Architecture
 
 User Query → Embedding → Hybrid Retrieval → Reranking → Feedback Adjustment → Prompt → LLM → Response
+
+<img src="rag-architecture.png" alt="Architectural diagram of the process flow">
 
 ## Features
 

@@ -53,3 +53,7 @@ logs/
 # draw.io temp / backup files
 *.bkp
 *.dtmp
+
+
+# duplicate file
+README copy.md
