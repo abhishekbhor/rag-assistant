@@ -15,6 +15,8 @@ Key capabilities:
 - Caching (response reuse)
 - Feedback loop (user ratings influence ranking)
 
+<img src="rag-structure.png" alt="Code structure">
+
 ## Architecture
 
 User Query → Embedding → Hybrid Retrieval → Reranking → Feedback Adjustment → Prompt → LLM → Response
