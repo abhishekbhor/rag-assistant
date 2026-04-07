@@ -15,7 +15,7 @@ Key capabilities:
 - Caching (response reuse)
 - Feedback loop (user ratings influence ranking)
 
-<img src="rag-structure.png" alt="Code structure" width="150">
+<img src="rag-structure.png" alt="Code structure" width="250">
 
 ## Architecture
 
