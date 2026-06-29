@@ -64,6 +64,9 @@ EMBEDDING_PROVIDER=openai
 
 CLI:
 ```bash
+cd /path to/rag-assistant (only if the current location is not rag-assistant)
+python3 -m venv .venv (only if .venv is not installed)
+source .venv/bin/activate (only if .venv is not activated)
 python -m app.main
 ```
 
